@@ -1,7 +1,7 @@
 const images = [
-    { src: '../assets/images/work/1.png', link: 'page1.html' },
-    { src: '../assets/images/work/3.png', link: 'soluza.html' },
-    { src: '../assets/images/work/2.png', link: 'page3.html' },
+    { src: '../assets/images/work/byram.png', link: 'byram.html' },
+    { src: '../assets/images/work/soluza.png', link: 'soluza.html' },
+    { src: '../assets/images/work/ikar.png', link: 'ikar.html' },
 ];
 
 let currentIndex = 1;
