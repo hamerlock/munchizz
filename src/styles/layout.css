@@ -2,8 +2,18 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    color: white;
+    overflow-x: hidden;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
 
 /* Typo Home page menu : Sofia Sans Condensed
 
