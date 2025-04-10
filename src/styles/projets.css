@@ -11,7 +11,7 @@ body {
 
 .projets-container {
     display: flex;
-    max-width: 100rem;
+    max-width: 95rem;
 }
 
 @media screen and (max-height: 891px) {

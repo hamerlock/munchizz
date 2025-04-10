@@ -14,8 +14,8 @@
 }
 
 .logo {
-    height: 10rem;
-    width: 50rem;
+    height: 3.5rem;
+    width: 23rem;
     padding-bottom: 10%;
 }
 
@@ -35,17 +35,17 @@
 
 .nav-menu a {
     font-family:'Sofia Sans Condensed', 'Italic';
-    font-size: 4rem;
+    font-size: 2rem;
     transition: opacity 0.3s;
 }
 
 .social-icon {
     position: absolute;
-    bottom: 6rem;
-    right: 5%;
+    bottom: 4rem;
+    right: 4rem;
 }
 
 .social-icon img {
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
 }
