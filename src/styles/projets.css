@@ -9,14 +9,14 @@ body {
     font-family: 'Carrois Gothic SC';
 }
 
-.soluza-container {
+.projets-container {
     display: flex;
     width: 90%;
     max-width: 80rem;
 }
 
  @media screen and (max-width: 950px) {
-    .soluza-container {
+    .projets-container {
         flex-direction: column;
         height: auto;
         margin: auto;
