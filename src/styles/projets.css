@@ -11,9 +11,14 @@ body {
 
 .projets-container {
     display: flex;
-    width: 90%;
-    max-width: 80rem;
+    max-width: 100rem;
 }
+
+@media screen and (max-height: 891px) {
+    .projets-container {
+        max-width: 85rem;
+    }
+ } 
 
  @media screen and (max-width: 950px) {
     .projets-container {
@@ -25,6 +30,9 @@ body {
     .left-panel {
         width: 100%;
         height: auto;
+    }
+    .right-panel{
+        margin: 1.5rem;
     }
  } 
 
@@ -57,7 +65,8 @@ h1 {
 
 .time {
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 3rem;
 }
 
 .time span {
@@ -87,6 +96,10 @@ h1 {
 
 .details p.spaced {
     margin-top: 20px;
+}
+
+.details p.right{
+    justify-content: right;
 }
 
 .right-panel {
