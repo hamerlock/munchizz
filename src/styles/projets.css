@@ -14,7 +14,6 @@ body {
     max-width: 80rem;
 }
 
-
  @media screen and (max-width: 950px) {
     .projets-container {
         flex-direction: column;
@@ -132,8 +131,4 @@ h1 {
 
 .thumbnail:hover {
     transform: scale(1.1); /* Agrandit légèrement l'image au survol */
-}
-
-.thumbnail.selected {
-    border: 2px solid white; /* Ajoute une bordure blanche à l'image sélectionnée */
 }
