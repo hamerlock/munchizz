@@ -128,3 +128,17 @@ h1 {
     object-fit: cover;
     border-radius: 5px;
 }
+
+/* Gestion du changement de l'image de la galerie au survol */
+.thumbnail {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
+
+.thumbnail.selected {
+    border: 2px solid white; /* Ajoute une bordure blanche à l'image sélectionnée */
+}

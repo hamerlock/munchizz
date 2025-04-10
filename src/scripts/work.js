@@ -2,6 +2,7 @@ const images = [
     { src: '../assets/images/work/byram.png', link: 'byram.html' },
     { src: '../assets/images/work/soluza.png', link: 'soluza.html' },
     { src: '../assets/images/work/ikar.png', link: 'ikar.html' },
+    { src: '../assets/images/work/pakks.png', link: 'pakks.html' },
 ];
 
 let currentIndex = 1;
