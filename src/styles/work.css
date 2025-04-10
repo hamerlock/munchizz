@@ -70,10 +70,13 @@ h1 {
     z-index: 2;
 }
 
-.slide.current img {
-    max-height: 55%;
-    max-width: 100%;
-
+.slider-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30rem;
+    width: 30%;
+    height: 100%;
 }
 
 .slide.next {
@@ -81,6 +84,15 @@ h1 {
     transform: scale(0.7);
     opacity: 0.5;
     z-index: 1;
+}
+
+/* Supprime l'effet de transparence et ajoute un effet de zoom au survol */
+.slide.current:hover img {
+    transform: scale(1.1); /* Agrandit légèrement l'image */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Ajoute une transition fluide */
+}
+.slide.current a:hover {
+    opacity: 1; /* Supprime l'effet de transparence */
 }
 
 .slider-arrow {

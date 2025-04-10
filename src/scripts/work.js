@@ -1,7 +1,7 @@
 const images = [
-    '../assets/images/work/1.png',
-    '../assets/images/work/3.png',
-    '../assets/images/work/2.png',
+    { src: '../assets/images/work/1.png', link: 'page1.html' },
+    { src: '../assets/images/work/3.png', link: 'soluza.html' },
+    { src: '../assets/images/work/2.png', link: 'page3.html' },
 ];
 
 let currentIndex = 1;
@@ -11,12 +11,18 @@ function updateSlider() {
     
     slides.forEach(slide => {
         const img = slide.querySelector('img');
+        const link = slide.querySelector('a');
         if (slide.classList.contains('current')) {
-            img.src = images[currentIndex];
+            img.src = images[currentIndex].src;
+            link.href = images[currentIndex].link;
         } else if (slide.classList.contains('previous')) {
-            img.src = images[currentIndex === 0 ? images.length - 1 : currentIndex - 1];
+            const prevIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+            img.src = images[prevIndex].src;
+            link.href = images[prevIndex].link;
         } else if (slide.classList.contains('next')) {
-            img.src = images[currentIndex === images.length - 1 ? 0 : currentIndex + 1];
+            const nextIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+            img.src = images[nextIndex].src;
+            link.href = images[nextIndex].link;
         }
     });
 }
