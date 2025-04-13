@@ -86,8 +86,12 @@ h1 {
 }
 
 /* Désactiver les transitions pour les images en arrière-plan */
+/* Masquer complètement les images en arrière-plan */
 .slide.hidden {
-    transition: none;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0; /* Envoyer à l'arrière-plan */
+    transition: none; /* Désactiver les transitions */
 }
 
 .arrow {
