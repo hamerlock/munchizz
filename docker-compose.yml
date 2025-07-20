@@ -1,0 +1,20 @@
+services:
+  munchizz:
+    image: nginx:alpine
+    container_name: munchizz
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+    labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.munchizz.rule=Host(`munchizz.tomremili.fr`)"
+          # - "traefik.http.routers.munchizz.rule=PathPrefix(`/`)"
+        - "traefik.http.routers.munchizz.entrypoints=websecure"
+        - "traefik.http.routers.munchizz.tls=true"
+        - "traefik.http.routers.munchizz.tls.certresolver=le"
+        - "traefik.http.services.munchizz.loadbalancer.server.port=80"
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
